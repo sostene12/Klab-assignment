@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue:rgb(79, 39, 222);
+    --red:rgb(158, 41, 41);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: bisque;
+    width: 70%;
+    margin: 30px auto;
+}
+
+.tab-header{
+    display: flex;
+}
+
+.tab-header div{
+    color: white;
+    background-color: var(--blue);
+    padding: 10px 20px;
+    margin: 0px 20px;
+    width: 120px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tab-body{
+    padding: 10px 5px ;
+}
+
+.tab-body .tab{
+    display: none;
+}
+.tab-body .active{
+    display: block;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab div{
+    padding: 10px 0px;
+}
+
+.tabform form input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 8px;
+}
+
+.tabform form input:focus{
+    outline: none;
+}
+
+.tabform form button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--blue);
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.alltasks{
+    display: flex;
+    flex-direction: column;
+}
+
+.alltasks div{
+    margin: 5px 0px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.task-added span:last-child{
+    background-color: var(--red);
+    color: white;
+    padding: 5px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+/* calculator */
+.container {
+    margin-left: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 13px 13px 20px #cbced1,
+        -13px -13px 20px #ffffff;
+}
+
+.content {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row button {
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px #00000020,
+        -5px -5px 8px #ffff;
+}
+
+.row button:hover {
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+        inset -5px -5px 8px #fff;
+    background: #fff;
+}
+
+.display #screen {
+    margin-bottom: .5em;
+    width: auto;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+}
+
+#eval {
+    background: #33ccff;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+        inset -5px -5px 8px #00ace6;
+}
+
+#eval:hover {
+    box-shadow: inset 5px 5px 8px #00ace6,
+        inset -5px -5px 8px #00ace6;
+}
+
+#ac {
+    background: #33cc33;
+    color: #fff;
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #2eb82e,
+        inset -5px -5px 8px #33cc33;
+}
+
+#ce {
+    background: #ff3399;
+    color: #fff;
+}
+
+#ce:hover {
+    box-shadow: inset 5px 5px 8px #e60073,
+        inset -5px -5px 8px #ff3399;
+}
