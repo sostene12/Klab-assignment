@@ -9,7 +9,7 @@ taskForm.addEventListener('submit',(e) =>{
     newOne.setAttribute('class','task-added');
     newOne.innerHTML = `
     <span>${task}</span>
-    <span class="remove-task">Done</span>
+    <span class="remove-task">delete</span>
     `;
     allTasks.appendChild(newOne)
     taskForm.reset();
